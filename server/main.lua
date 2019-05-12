@@ -25,6 +25,7 @@ AddEventHandler('esx_accessories:save', function(skin, accessory)
 		itemSkin[item2] = skin[item2]
 
 		store.set('skin', itemSkin)
+		store.save()
 	end)
 end)
 
